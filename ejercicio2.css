@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Nunito";
+    src: url("./fonts/Nunito_Sans/static/NunitoSans_10pt-Black.ttf")format('truetype'), 
+    url("./converted-fonts/NunitoSans_7pt_Condensed-Black.woff2") format('woff2');
+}
+
+:root {
+
+    --accent: hsl(56, 100%, 61%);
+    --borde: hsl(270, 100%, 94%);
+    --primary: hsl(263, 40%, 50%);
+    --activo: hsl(263, 73%, 20%);
+    --sombra: hsl(263, 50%, 63%);
+    --texto: hsl(263, 16%, 63%);
+    --titulos:hsl(263, 10%, 23%);
+    --fontPrimary: "Roboto Serif";
+    --fontSecundary: "Nunito";
+
+}
+
+body {
+
+    justify-content: space-around;
+}
+
+header {
+    text-align: center;
+    padding: 1%;
+    background-color: var(--primary);
+}
+
+
+h1 {
+    font-family: var(--fontPrimary), serif;
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: normal;
+    color: var(--accent);
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1%;
+}
+
+nav li {
+    flex-grow: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    font-size: 16px;
+    display: block;
+    margin: 0;
+    color: var(--accent);
+    padding: 10px;
+    border: 1px solid var(--borde);
+    background-color: var(--sombra);
+    text-decoration: none;
+    font-family: var(--fontSecundary), sans-serif;
+
+
+}
+
+nav a:hover {
+    background-color: var(--activo)
+}
+
+
+section {
+    margin-bottom: 10px;
+    padding-left: 1%;
+    border: 1px solid var(--borde);
+    padding: 3px 10px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px var(--sombra);
+
+
+}
+
+section h2 {
+    font-family: var(--fontPrimary), serif;
+    margin-top: 1%;
+    font-size: 25px;
+    color: var(--titulos);
+}
+
+section p {
+    font-size: 20px;
+    color: var(--texto);
+    margin-bottom: 5%;
+    margin-top: 0;
+    font-family: var(--fontSecundary), sans-serif;
+
+}
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    color: var(--accent);
+    padding: 0.1%;
+    margin: 0.1%;
+
+}
